@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">    
     <meta charset="UTF-8">
 </head>
+<body>
     <header>
         <h1>My Reading Whishlist</h1>
     </header>
@@ -36,7 +37,28 @@
     <footer>
         <p>Happy Reading!</p>
     </footer>
-<body>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script> 
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAuPoGHdLcTLpbGoookILN0sRp_Op1Ql9k",
+          authDomain: "cc-vizsga.firebaseapp.com",
+          projectId: "cc-vizsga",
+          storageBucket: "cc-vizsga.appspot.com",
+          messagingSenderId: "553885582810",
+          appId: "1:553885582810:web:d47b2bb519d243c2b0ece3"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
 </body>
 
 </html>
